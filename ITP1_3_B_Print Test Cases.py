@@ -7,6 +7,6 @@ while True:
 del num_list[-1]
 
 for i in range(len(num_list)):
-    print("Case ", i+1, ": ", num_list[i])
+    print("Case", i+1, ":", num_list[i])
 
 # https://www.modis.co.jp/candidate/insight/column_98
