@@ -13,7 +13,8 @@ for i in range(len(num_list)):
 
 
 for num in num_list:
-    print(num)
+    num.sort()
+    print(num[0], num[1])
 
 # https://techacademy.jp/magazine/49549
 # https://natu-ym.com/python-list-conv/
