@@ -1,3 +1,5 @@
+num_list = []
+
 while True:
     num_list.append(int(input().split()))
     if num_list[-1][0] == 0 and num_list[-1][1] == 0:
