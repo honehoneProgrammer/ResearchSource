@@ -4,7 +4,7 @@ while True:
     if num_list[-1] == 0:
         break
 
-num_list.remove(-1)
+del num_list[-1]
 
 for i in range(len(num_list)):
     print("Case ", i, ": ", num_list[i])
