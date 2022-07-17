@@ -12,7 +12,8 @@ for i in range(len(num_list)):
     num_list[i][1] = int(num_list[i][1])
 
 
-for num in range(num_list):
-    print(num.sort())
+for num in num_list:
+    print(num)
 
 # https://techacademy.jp/magazine/49549
+# https://natu-ym.com/python-list-conv/
