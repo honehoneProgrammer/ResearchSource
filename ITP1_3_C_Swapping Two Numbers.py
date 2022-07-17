@@ -1,7 +1,7 @@
 num_list = []
 
 while True:
-    num_list.append(int(input().split()))
+    num_list.append(input().split())
     if num_list[-1][0] == 0 and num_list[-1][1] == 0:
         break
 
