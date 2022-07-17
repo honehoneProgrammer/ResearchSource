@@ -1,8 +1,8 @@
-i = 1
-
+num_list = []
 while True:
-    num = int(input())
-    if num == 0:
-        exit()
-    print("Case ", i, ": ", num)
-    i += 1
+    num_list.append(int(input()))
+    if num_list[-1] == 0:
+        brea
+
+for i in range(len(num_list))
+    print("Case ", i, ": ", num_list[i])
