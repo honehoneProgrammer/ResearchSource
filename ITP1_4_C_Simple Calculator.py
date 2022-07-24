@@ -17,13 +17,13 @@ for num in num_list:
         print(num[0]+num[2])
 
     elif operand == "-":
-        print(num[0]+num[2])
+        print(num[0]-num[2])
 
     elif operand == "*":
-        print(num[0]+num[2])
+        print(num[0]*num[2])
 
     elif operand == "/":
-        print(num[0]+num[2])
+        print(num[0]/num[2])
 
     elif operand == "?":
         break
