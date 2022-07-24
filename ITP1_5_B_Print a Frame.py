@@ -14,7 +14,7 @@ for num in num_list:
         for j in range(num[1]):
             if i == 0 or i == num[0]-1 or j == 0 or j == num[1]-1:
                 print("#", end="")
-            elif:
+            else:
                 print(".", end="")
         print()
     print()
