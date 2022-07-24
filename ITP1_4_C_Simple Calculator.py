@@ -12,7 +12,6 @@ for i in range(len(num_list)):
     num_list[i][2] = int(num_list[i][2])
 
 for num in num_list:
-    operand = num_list[1]
     if operand == "+":
         print(num[0]+num[2])
 
