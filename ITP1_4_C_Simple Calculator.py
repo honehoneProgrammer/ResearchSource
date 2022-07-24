@@ -3,21 +3,26 @@ operand = ""
 
 while True:
     num_list.append(input().split())
-    operand = num_list[1]
-    num_list[0] = int(num_list[0])
-    num_list[1] = int(num_list[1])
+    operand = num_list[-1][1]
+    if operand == "?":
+        break
 
+for i in range(len(num_list)):
+    num_list[i][0] = int(num_list[i][0])
+    num_list[i][1] = int(num_list[i][1])
+
+for num in num_list:
     if operand == "+":
-        print(num_list[0]+num_list[2])
+        print(num[0]+num[2])
 
     elif operand == "-":
-        print(num_list[0]+num_list[2])
+        print(num[0]+num[2])
 
     elif operand == "*":
-        print(num_list[0]+num_list[2])
+        print(num[0]+num[2])
 
     elif operand == "/":
-        print(num_list[0]+num_list[2])
-        
+        print(num[0]+num[2])
+
     elif operand == "?":
         break
