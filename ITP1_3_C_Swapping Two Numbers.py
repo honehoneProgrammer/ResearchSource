@@ -1,5 +1,6 @@
 num_list = []
 
+
 while True:
     num_list.append(input().split())
     if (num_list[-1][0] == "0") and (num_list[-1][1] == "0"):
@@ -18,3 +19,4 @@ for num in num_list:
 
 # https://techacademy.jp/magazine/49549
 # https://natu-ym.com/python-list-conv/
+
