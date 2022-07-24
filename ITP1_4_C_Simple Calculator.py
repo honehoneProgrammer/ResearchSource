@@ -1,3 +1,5 @@
+import math
+
 num_list = []
 operand = ""
 
@@ -23,7 +25,9 @@ for num in num_list:
         print(num[0]*num[2])
 
     elif operand == "/":
-        print(num[0]/num[2])
+        print(math.floor(num[0]/num[2]))
 
     elif operand == "?":
         break
+
+# https://note.nkmk.me/python-math-floor-ceil-int/
