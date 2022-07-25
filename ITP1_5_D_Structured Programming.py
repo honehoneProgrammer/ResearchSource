@@ -6,9 +6,9 @@ for i in range(num):
         continue
     
     while True:
-    if i % 10 == 3:
-        print(i, end=" ")
-        break
-    i /= 10
-    if i == 0:
-        break
+        if i % 10 == 3:
+            print(i, end=" ")
+            break
+        i /= 10
+        if i == 0:
+            break
