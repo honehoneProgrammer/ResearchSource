@@ -1,6 +1,6 @@
 num = int(input())
 
-for i in range(num):
+for i in range(1, num+1):
     if i % 3 == 0:
         print(i, end=" ")
         continue
@@ -12,3 +12,5 @@ for i in range(num):
         i /= 10
         if i == 0:
             break
+
+# https://www.javadrive.jp/python/function/index6.html
