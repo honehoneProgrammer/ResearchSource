@@ -9,7 +9,7 @@ for i in range(1, num+1):
         if i % 10 == 3:
             print(i, end=" ")
             break
-        i /= 10
+        i //= 10
         if i == 0:
             break
 
