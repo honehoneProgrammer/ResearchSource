@@ -5,6 +5,6 @@ num_list.reverse()
 
 for ele in num_list:
     if ele == num_list[-1]:
-        print(ele)
+        print(ele, end="")
         break
     print(ele, end=" ")
