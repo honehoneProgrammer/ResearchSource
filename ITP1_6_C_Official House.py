@@ -20,3 +20,4 @@ for i in range(12):
         print("####################")
 
 # 二次元配列 python  https://camp.trainocate.co.jp/magazine/python-two-dimensional-array/
+vscode python numpy 使えない 
