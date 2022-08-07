@@ -4,7 +4,6 @@ ans = np.zeros((12, 10))
 
 length = int(input())
 num_list = list()
-ans = []
 
 for i in range(length):
     tmp_list = [int(x) for x in input().split()]
