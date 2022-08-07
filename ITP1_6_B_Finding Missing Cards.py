@@ -3,12 +3,12 @@ num_list = {'S' : [], 'H' : [], 'C' : [], 'D' : []}
 ans_list = {'S' : [], 'H' : [], 'C' : [], 'D' : []}
 lis = ['S', 'H' ,'C' ,'D']
 
-for i in length:
+for i in range(length):
     tmp_list = [x for x in input().split()]
     num_list[tmp_list[0]].append(int(tmp_list[1]))
 
 
-for i in 13:
+for i in range(13):
     for index in lis:
         if not i in num_list[index]:
             ans_list[index].append(i)
