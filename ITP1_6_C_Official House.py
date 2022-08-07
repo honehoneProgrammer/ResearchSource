@@ -7,7 +7,7 @@ num_list = list()
 ans = []
 
 for i in range(length):
-    tmp_list = [x for x in input().split()]
+    tmp_list = [int(x) for x in input().split()]
     ans[(tmp_list[0]-1)*3+(tmp_list[1]-1)][tmp_list[2]-1] += tmp_list[3]
 
 for i in range(12):
@@ -20,4 +20,4 @@ for i in range(12):
         print("####################")
 
 # 二次元配列 python  https://camp.trainocate.co.jp/magazine/python-two-dimensional-array/
-vscode python numpy 使えない 
+# vscode python numpy 使えない  https://www.wantanblog.com/entry/2021/12/25/223145
