@@ -10,12 +10,12 @@ for i in range(length):
 
 for i in range(13):
     for index in lis:
-        if not i in num_list[index]:
-            ans_list[index].append(i)
+        if not i+1 in num_list[index]:
+            ans_list[index].append(i+1)
 
 for index in lis:
     for ans in ans_list[index]:
-        print(index, ans+1)
+        print(index, ans)
 
 
 # python list 検索 https://atmarkit.itmedia.co.jp/ait/articles/2012/18/news022.html
