@@ -5,22 +5,19 @@ ans = np.zeros((12, 10))
 length = int(input())
 num_list = list()
 
-print(ans)
-
 for i in range(length):
     tmp_list = [int(x) for x in input().split()]
     ans[(tmp_list[0]-1)*3+(tmp_list[1]-1)][tmp_list[2]-1] += tmp_list[3]
 
-print(ans[11][6])
-
 for i in range(12):
     for j in range(10):
         if j == 9:
-            print(ans[i][j])
+            print('%d' % ans[i][j])
             break
-        print(ans[i][j], end=" ")
+        print('%d' % ans[i][j], end=" ")
     if i % 3 == 2 and not i == 11:
         print("####################")
 
 # 二次元配列 python  https://camp.trainocate.co.jp/magazine/python-two-dimensional-array/
 # vscode python numpy 使えない  https://www.wantanblog.com/entry/2021/12/25/223145
+# print 整数 出力 python https://creive.me/archives/31794/
