@@ -1,7 +1,4 @@
-import numpy as np
-
-ans = np.zeros((12, 10))
-
+ans = [[0 for i in range(12)] for j in range(10)]
 length = int(input())
 num_list = list()
 
@@ -10,6 +7,7 @@ for i in range(length):
     ans[(tmp_list[0]-1)*3+(tmp_list[1]-1)][tmp_list[2]-1] += tmp_list[3]
 
 for i in range(12):
+    print(" ", end='')
     for j in range(10):
         if j == 9:
             print('%d' % ans[i][j])
