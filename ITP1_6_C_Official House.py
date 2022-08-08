@@ -5,16 +5,20 @@ ans = np.zeros((12, 10))
 length = int(input())
 num_list = list()
 
+print(ans)
+
 for i in range(length):
     tmp_list = [int(x) for x in input().split()]
     ans[(tmp_list[0]-1)*3+(tmp_list[1]-1)][tmp_list[2]-1] += tmp_list[3]
 
+print(ans[11][6])
+
 for i in range(12):
-    for num in ans[i]:
-        if num == ans[i][-1]:
-            print(num)
+    for j in range(10):
+        if j == 9:
+            print(ans[i][j])
             break
-        print(num, end=" ")
+        print(ans[i][j], end=" ")
     if i % 3 == 2 and not i == 11:
         print("####################")
 
