@@ -1,7 +1,5 @@
-num_list = []
-inp = input()
+a=list(map(int,input().split()))
 
-for i in inp.split():
-    num_list.append(i)
+a.sort()
 
-print(num_list)
+print(' '.join(map(str,a)))
