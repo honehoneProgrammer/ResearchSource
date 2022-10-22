@@ -17,3 +17,5 @@ for j in jl:
             min = num_list[i]
     ans.append(min)
 
+print(ans)
+
