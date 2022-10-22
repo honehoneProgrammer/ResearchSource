@@ -14,5 +14,5 @@ for j in range(len(num_list), 0,-1):
             min = num_list[i]
     ans.append(min)
 
-print(num_list[0], num_list[1], num_list[2])
+print(ans[0], ans[1], ans[2])
 
