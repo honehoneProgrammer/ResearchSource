@@ -9,11 +9,10 @@ ans = []
 l = len(num_list)
 
 for j in range(l):
-    print(j)
     min = 100000
     for i in range(len(num_list)):
         if min > num_list[i]:
-            min = num_list[i]
+            min = num_list.pop(i)
     ans.append(min)
 
 print(ans[0], ans[1], ans[2])
