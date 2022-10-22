@@ -6,10 +6,12 @@ for i in inp.split():
 
 min = 100000
 ans = []
+l = len(num_list)
 
-for j in range(len(num_list), 0,-1):
+for j in range(l):
+    print(j)
     min = 100000
-    for i in range(j):
+    for i in range(len(num_list)):
         if min > num_list[i]:
             min = num_list[i]
     ans.append(min)
