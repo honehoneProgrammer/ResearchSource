@@ -7,11 +7,7 @@ for i in inp.split():
 min = 100000
 ans = []
 
-
-jl =  range(len(num_list))
-jl.__reversed__
-
-for j in jl:
+for j in range(len(num_list), -1, -1):
     for i in range(j):
         if min > num_list[i]:
             min = num_list[i]
