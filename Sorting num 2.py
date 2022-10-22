@@ -4,7 +4,16 @@ inp = input()
 for i in inp.split():
     num_list.append(int(i))
 
-num_list.sort()
+min = 100000
+ans = []
 
-print(num_list[0], num_list[1], num_list[2])
+
+jl =  range(len(num_list))
+jl.__reversed__
+
+for j in jl:
+    for i in range(j):
+        if min > num_list[i]:
+            min = num_list[i]
+    ans.append(min)
 
