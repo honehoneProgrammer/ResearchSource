@@ -1,13 +1,11 @@
-num_list = []
+length = int(input())
+num_list = [x for x in input().split()]
 
-
-while True:
-    num_list.append(input().split())
-    if (num_list[-1][0] == "0") and (num_list[-1][1] == "0"):
+num_list.reverse()
+element = ""
+for ele in num_list:
+    element = ele
+    if element == num_list[-1]:
+        print(element, end="")
         break
-
-del num_list[-1]
-
-for i in range(len(num_list)):
-    num_list[i][0] = int(num_list[i][0])
-    num_list[i][1] = int(num_list[i][1])
+    print(ele, end=" ")
