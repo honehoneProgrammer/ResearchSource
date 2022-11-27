@@ -8,20 +8,3 @@ while True:
 
     if num_list[-1][0] == 0 and num_list[-1][1] == 0:
         break
-
-for num in num_list:
-    for i in range(num[0]):
-        for j in range(num[1]):
-            if i % 2 == 0:
-                if j % 2 == 0:
-                    print("#", end="")
-                else:
-                    print(".", end="")
-
-            else:
-                if j % 2 == 0:
-                    print(".", end="")
-                else:
-                    print("#", end="")
-        print()
-    print()
