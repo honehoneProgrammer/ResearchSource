@@ -1,11 +1,6 @@
-length = int(input())
-num_list = [x for x in input().split()]
+a, b, c = (int(x) for x in input().split())
 
-num_list.reverse()
-element = ""
-for ele in num_list:
-    element = ele
-    if element == num_list[-1]:
-        print(element, end="")
-        break
-    print(ele, end=" ")
+if a < b and b < c:
+    print("Yes")
+else:
+    print("No")
