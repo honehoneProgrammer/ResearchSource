@@ -1,3 +1,2 @@
-num_list = []
-while True:
-    num_list.append(int(input()))
+for i in range(1000):
+    print("Hello World")
