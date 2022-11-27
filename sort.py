@@ -1,4 +1,7 @@
-length = int(input())
-num_list = [int(x) for x in input().split()]
+num_list = []
+while True:
+    num_list.append(int(input()))
+    if num_list[-1] == 0:
+        break
 
-print(min(num_list), max(num_list), sum(num_list))
+del num_list[-1]
