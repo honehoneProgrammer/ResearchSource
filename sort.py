@@ -1,10 +1,14 @@
-num_list = []
+num = int(input())
 
-while True:
-    num_list.append(input().split())
-
-    num_list[-1][0] = int(num_list[-1][0])
-    num_list[-1][1] = int(num_list[-1][1])
-
-    if num_list[-1][0] == 0 and num_list[-1][1] == 0:
-        break
+for i in range(1, num+1):
+    if i % 3 == 0:
+        print(i, end=" ")
+        continue
+    
+    while True:
+        if i % 10 == 3:
+            print(i, end=" ")
+            break
+        i //= 10
+        if i == 0:
+            break
