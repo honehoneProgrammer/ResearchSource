@@ -1,9 +1,4 @@
-import math
+length = int(input())
+num_list = [int(x) for x in input().split()]
 
-num_list = []
-operand = ""
-
-for num in num_list:
-    operand = num[1]
-    if operand == "+":
-        print(num[0]+num[2])
+print(min(num_list), max(num_list), sum(num_list))
