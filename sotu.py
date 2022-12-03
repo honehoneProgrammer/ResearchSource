@@ -1,12 +1,20 @@
-input_string = "3 2 1"
+num1 = int(input())
+num2 = int(input())
+num3 = int(input())
 
-nums = input_string.split(" ")
+if num1>num2:
+    tmp = num2
+    num2 = num1
+    num1 = tmp
 
-for _ in range(len(nums)-1):
-	for i in range(len(nums)-1):
-		if(nums[i] > nums[i+1]):
-			tmp = nums[i+1]
-			nums[i] = nums[i+1]
-			nums[i+1] = tmp
+if num2>num3:
+    tmp = num3
+    num3 = num2
+    num2 = tmp
 
-print(" ".join(nums))
+    if num1>num2:
+        tmp = num2
+        num2 = num1
+        num1 = tmp
+
+print('%d %d %d' %(num1, num2, num3))
