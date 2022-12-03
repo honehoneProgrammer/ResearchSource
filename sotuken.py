@@ -1,16 +1,16 @@
-input_string = "2 3 1"
+num1 = int(input())
+num2 = int(input())
+num3 = int(input())
 
-nums = input_string.split(" ")
+if num1>num2:
+    tmp = num2
+    num2 = num1
+    num1 = tmp
 
-if(nums[0] >= nums[1]):
-	if(nums[0] >= nums[2]):
-		print(nums[1] + " " + nums[2] + " " + nums[0])
-	else:
-		print(nums[0] + " " + nums[1] + " " + nums[2])
-else:
-	if(nums[1] >= nums[2]):
-		print(nums[0] + " " + nums[2] + " " + nums[1])
-	else:
-		print(nums[1] + " " + nums[0] + " " + nums[2])
+if num2>num3:
+    tmp = num3
+    num3 = num2
+    num2 = tmp
 
-print(" ".join(nums))
+
+print('%d %d %d' %(num1, num2, num3))
