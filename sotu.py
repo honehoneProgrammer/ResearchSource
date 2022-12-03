@@ -1,16 +1,25 @@
-num1 = int(input())
-num2 = int(input())
-num3 = int(input())
+a, b, c= map(int, input().split())
+if a > b:
+    if a > c:
+        max = a;
+        if b > c:
+            mid = b
+            min = c
+        else:
+            mid = c
+            min = b
+    else:
+        max = c
+        mid = a
+        min = b
+elif a > c:
+    max = b
+    mid = a
+    min = c
+else:
+    min = a
+    max = b
+    mid = c
 
-if num1>num2:
-    tmp = num2
-    num2 = num1
-    num1 = tmp
 
-if num2>num3:
-    tmp = num3
-    num3 = num2
-    num2 = tmp
-
-
-print('%d %d %d' %(num1, num2, num3))
+print('{} {} {}'.format(min,mid,max))
