@@ -1,12 +1,16 @@
-input_string = "3 2 1"
+input_string = "2 3 1"
 
 nums = input_string.split(" ")
 
-for _ in range(len(nums)-1):
-	for i in range(len(nums)-1):
-		if(nums[i] > nums[i+1]):
-			tmp = nums[i+1]
-			nums[i] = nums[i+1]
-			nums[i+1] = tmp
+if(nums[0] >= nums[1]):
+	if(nums[0] >= nums[2]):
+		print(nums[1] + " " + nums[2] + " " + nums[0])
+	else:
+		print(nums[0] + " " + nums[1] + " " + nums[2])
+else:
+	if(nums[1] >= nums[2]):
+		print(nums[0] + " " + nums[2] + " " + nums[1])
+	else:
+		print(nums[1] + " " + nums[0] + " " + nums[2])
 
 print(" ".join(nums))
