@@ -1,9 +1,10 @@
-num_list = [int(x) for x in input().split()]
+num_list = []
 
-divisors = 0
+while True:
+    num_list.append(input().split())
 
-for i in range(num_list[0], num_list[1]+1):
-    if num_list[2] % i == 0:
-        divisors += 1
+    num_list[-1][0] = int(num_list[-1][0])
+    num_list[-1][1] = int(num_list[-1][1])
 
-print(divisors)
+    if num_list[-1][0] == 0 and num_list[-1][1] == 0:
+        break
