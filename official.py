@@ -8,3 +8,5 @@ while True:
 
     if num_list[-1][0] == 0 and num_list[-1][1] == 0:
         break
+    
+    print("####################")
