@@ -1,22 +1,14 @@
-BIG_NUM = 2000000000
-
-table = [[[0]*10 for i in range (0,3)] for k in range (0,4)]
-
-N = int(input())
-
-for loop in range(N):
-    house_id,floor,room,add = map(int,input().split())
-    table[house_id-1][floor-1][room-1] += add
-
-
-x = 0
-
-for i in range(4):
-    if x != 0:
-        print("#"*20)
-    x += 1
-
-    for a in range(3):
-        for b in range(10):
-            print(" %d"%(table[i][a][b]),end = "")
+num=[[[0]*11 for i in range(4)] for j in range(5)]
+n=int(input())
+for i in range(n):
+    b,f,r,v=map(int,input().split())
+    num[b][f][r]+=v
+for i in range(1,5):
+    for j in range(1,4):
+        for k in range(1,11):
+            print(' ',num[i][j][k],sep='',end='')
+        print()
+    if i<4:
+        for j in range(20):
+            print('#',end='')
         print()
