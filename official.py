@@ -1,33 +1,22 @@
-import math
+BIG_NUM = 2000000000
 
-num_list = []
-operand = ""
+table = [[[0]*10 for i in range (0,3)] for k in range (0,4)]
 
-while True:
-    num_list.append(input().split())
-    operand = num_list[-1][1]
-    if operand == "?":
-        break
+N = int(input())
 
-for i in range(len(num_list)):
-    num_list[i][0] = int(num_list[i][0])
-    num_list[i][2] = int(num_list[i][2])
+for loop in range(N):
+    house_id,floor,room,add = map(int,input().split())
+    table[house_id-1][floor-1][room-1] += add
 
-for num in num_list:
-    operand = num[1]
-    if operand == "+":
-        print(num[0]+num[2])
 
-    elif operand == "-":
-        print(num[0]-num[2])
+x = 0
 
-    elif operand == "*":
-        print(num[0]*num[2])
+for i in range(4):
+    if x != 0:
+        print("#"*20)
+    x += 1
 
-    elif operand == "/":
-        print(math.floor(num[0]/num[2]))
-
-    elif operand == "?":
-        break
-
-# https://note.nkmk.me/python-math-floor-ceil-int/
+    for a in range(3):
+        for b in range(10):
+            print(" %d"%(table[i][a][b]),end = "")
+        print()
